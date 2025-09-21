@@ -1,6 +1,6 @@
 import { createServer } from "http";
-import isOdd from 'is-odd'; 
 
+const isOdd = (num: number): boolean => num % 2 !== 0;
 
 const server = createServer((req, res) => {
   res.statusCode = 200;
